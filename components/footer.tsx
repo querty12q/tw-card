@@ -47,29 +47,29 @@ function DiscordIcon({ className = "" }: { className?: string }) {
 }
 
 const footerLinks = {
-  Product: [
-    { label: "Features", href: "https://trustwallet.com/features" },
-    { label: "Security", href: "https://trustwallet.com/security" },
-    { label: "Pricing", href: "https://trustwallet.com/pricing" },
-    { label: "Roadmap", href: "https://trustwallet.com/roadmap" }
+  Features: [
+    { label: "Buy Crypto", href: "https://trustwallet.com/buy-crypto" },
+    { label: "Swaps", href: "https://trustwallet.com/swap" },
+    { label: "Staking", href: "https://trustwallet.com/staking" },
+    { label: "NFTs", href: "https://trustwallet.com/nft" }
   ],
-  Company: [
-    { label: "About", href: "https://trustwallet.com/about" },
-    { label: "Careers", href: "https://trustwallet.com/careers" },
-    { label: "Press", href: "https://trustwallet.com/press" },
-    { label: "Blog", href: "https://trustwallet.com/blog" }
-  ],
-  Resources: [
-    { label: "Documentation", href: "https://trustwallet.com/docs" },
-    { label: "Help Center", href: "https://support.trustwallet.com" },
-    { label: "Community", href: "https://community.trustwallet.com" },
+  Markets: [
+    { label: "Prices", href: "https://trustwallet.com/prices" },
+    { label: "Converter", href: "https://trustwallet.com/converter" },
+    { label: "Wallets", href: "https://trustwallet.com/wallets" },
     { label: "Partners", href: "https://trustwallet.com/partners" }
   ],
-  Legal: [
-    { label: "Privacy Policy", href: "https://trustwallet.com/privacy" },
-    { label: "Terms of Service", href: "https://trustwallet.com/terms" },
-    { label: "Cookie Policy", href: "https://trustwallet.com/cookies" },
-    { label: "Licenses", href: "https://trustwallet.com/licenses" }
+  Build: [
+    { label: "Developer Docs", href: "https://developer.trustwallet.com" },
+    { label: "Wallet Core", href: "https://github.com/trustwallet/wallet-core" },
+    { label: "Submit dApp", href: "https://trustwallet.com/submit-dapp" },
+    { label: "API Docs", href: "https://developer.trustwallet.com/docs/api" }
+  ],
+  About: [
+    { label: "About Us", href: "https://trustwallet.com/about" },
+    { label: "Careers", href: "https://trustwallet.com/careers" },
+    { label: "Press Kit", href: "https://trustwallet.com/press" },
+    { label: "Security", href: "https://trustwallet.com/security" }
   ]
 }
 
