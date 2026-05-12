@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen pt-20 md:pt-24 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
+    <section className="relative min-h-screen pt-8 md:pt-12 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl" />
