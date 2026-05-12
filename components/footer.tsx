@@ -47,10 +47,30 @@ function DiscordIcon({ className = "" }: { className?: string }) {
 }
 
 const footerLinks = {
-  Product: ["Features", "Security", "Pricing", "Roadmap"],
-  Company: ["About", "Careers", "Press", "Blog"],
-  Resources: ["Documentation", "Help Center", "Community", "Partners"],
-  Legal: ["Privacy Policy", "Terms of Service", "Cookie Policy", "Licenses"]
+  Product: [
+    { label: "Features", href: "https://trustwallet.com/features" },
+    { label: "Security", href: "https://trustwallet.com/security" },
+    { label: "Pricing", href: "https://trustwallet.com/pricing" },
+    { label: "Roadmap", href: "https://trustwallet.com/roadmap" }
+  ],
+  Company: [
+    { label: "About", href: "https://trustwallet.com/about" },
+    { label: "Careers", href: "https://trustwallet.com/careers" },
+    { label: "Press", href: "https://trustwallet.com/press" },
+    { label: "Blog", href: "https://trustwallet.com/blog" }
+  ],
+  Resources: [
+    { label: "Documentation", href: "https://trustwallet.com/docs" },
+    { label: "Help Center", href: "https://support.trustwallet.com" },
+    { label: "Community", href: "https://community.trustwallet.com" },
+    { label: "Partners", href: "https://trustwallet.com/partners" }
+  ],
+  Legal: [
+    { label: "Privacy Policy", href: "https://trustwallet.com/privacy" },
+    { label: "Terms of Service", href: "https://trustwallet.com/terms" },
+    { label: "Cookie Policy", href: "https://trustwallet.com/cookies" },
+    { label: "Licenses", href: "https://trustwallet.com/licenses" }
+  ]
 }
 
 export function Footer() {
@@ -68,13 +88,13 @@ export function Footer() {
               Spend directly from your crypto wallet with 0% fees.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors">
+              <a href="https://twitter.com/trustwallet" className="text-slate-400 hover:text-blue-600 transition-colors">
                 <TwitterIcon className="w-5 h-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors">
+              <a href="https://github.com/trustwallet" className="text-slate-400 hover:text-blue-600 transition-colors">
                 <GithubIcon className="w-5 h-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors">
+              <a href="https://discord.gg/trustwallet" className="text-slate-400 hover:text-blue-600 transition-colors">
                 <DiscordIcon className="w-5 h-5" />
               </a>
             </div>
@@ -86,9 +106,9 @@ export function Footer() {
               <h3 className="font-semibold text-slate-900 mb-4">{category}</h3>
               <ul className="space-y-3">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-slate-500 hover:text-blue-600 transition-colors text-sm">
-                      {link}
+                  <li key={link.label}>
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-600 transition-colors text-sm">
+                      {link.label}
                     </a>
                   </li>
                 ))}
